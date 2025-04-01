@@ -1,0 +1,23 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": [
+    // Route files detected by `@fastify/autoload`
+    "src/routes/**/*.ts",
+
+    // Config file of `dependency-cruiser`
+    ".dependency-cruiser.js",
+
+    // Config file of `prisma`
+    "prisma.config.ts"
+  ],
+  "ignoreDependencies": [
+    // Ran by `lefthook`, and potentially also by developer/automation
+    "@commitlint/cli",
+
+    // Used implicitly by `eslint-plugin-import-x`
+    "eslint-import-resolver-typescript"
+  ],
+  "node": {
+    "entry": "**/*.test.ts"
+  }
+}
