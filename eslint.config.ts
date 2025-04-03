@@ -146,6 +146,7 @@ export default typegen(
             allowList: {
               baseFastifyEnv: true,
               BaseFastifyEnvOptions: true,
+              envSchema: true,
               EnvSchema: true,
               fastifyEnv: true,
               fastifyEnvOptions: true,
