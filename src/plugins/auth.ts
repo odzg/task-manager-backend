@@ -3,7 +3,10 @@ import type {
   preHandlerHookHandler,
 } from 'fastify';
 
-import { fastifyAuth as auth } from '@fastify/auth';
+import {
+  fastifyAuth as auth,
+  type FastifyAuthPluginOptions,
+} from '@fastify/auth';
 import { Role } from '@prisma/client';
 import { fastifyPlugin } from 'fastify-plugin';
 
@@ -14,23 +17,25 @@ declare module 'fastify' {
   }
 }
 
-const fastifyAuth = fastifyPlugin((fastify) => {
-  fastify
-    .decorate('verifyJwt', async (request, reply) => {
-      try {
-        await request.jwtVerify();
-      } catch {
-        reply.code(401).send({ error: 'Invalid or missing token' });
-      }
-    })
-    .decorate('verifyAdmin', (request, reply, done) => {
-      if (request.user.role !== Role.ADMIN) {
-        reply.code(403).send({ error: 'Forbidden - Admin only' });
-      }
+export const fastifyAuth = fastifyPlugin<FastifyAuthPluginOptions>(
+  async (fastify, options) => {
+    await fastify
+      .decorate('verifyJwt', async (request, reply) => {
+        try {
+          await request.jwtVerify();
+        } catch {
+          reply.code(401).send({ error: 'Invalid or missing token' });
+        }
+      })
+      .decorate('verifyAdmin', (request, reply, done) => {
+        if (request.user.role !== Role.ADMIN) {
+          reply.code(403).send({ error: 'Forbidden - Admin only' });
+        }
 
-      done();
-    })
-    .register(auth);
-});
+        done();
+      })
+      .register(auth, options);
+  },
+);
 
-export default fastifyAuth;
+export type { FastifyAuthPluginOptions } from '@fastify/auth';

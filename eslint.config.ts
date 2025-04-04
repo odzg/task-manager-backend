@@ -144,12 +144,11 @@ export default typegen(
           'error',
           {
             allowList: {
-              baseFastifyEnv: true,
-              BaseFastifyEnvOptions: true,
+              envOptions: true,
+              EnvOptions: true,
               envSchema: true,
               EnvSchema: true,
               fastifyEnv: true,
-              fastifyEnvOptions: true,
               FastifyEnvOptions: true,
             },
             ignore: [/^env$/],

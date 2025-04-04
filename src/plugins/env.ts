@@ -1,4 +1,9 @@
-import { fastifyEnv as env } from '@fastify/env';
+import type { Except } from 'type-fest';
+
+import {
+  fastifyEnv as env,
+  type FastifyEnvOptions as EnvOptions,
+} from '@fastify/env';
 import { type Static, Type } from '@sinclair/typebox';
 import { fastifyPlugin } from 'fastify-plugin';
 
@@ -7,6 +12,10 @@ declare module 'fastify' {
     config: EnvSchema;
   }
 }
+
+export interface FastifyEnvOptions extends Except<EnvOptions, 'schema'> {}
+
+interface EnvSchema extends Static<typeof envSchema> {}
 
 const envSchema = Type.Object({
   DATABASE_URL: Type.String({
@@ -21,12 +30,11 @@ const envSchema = Type.Object({
   PORT: Type.Number(),
 });
 
-type EnvSchema = Static<typeof envSchema>;
-
-const fastifyEnv = fastifyPlugin(async (fastify) => {
-  await fastify.register(env, {
-    schema: envSchema,
-  });
-});
-
-export default fastifyEnv;
+export const fastifyEnv = fastifyPlugin<FastifyEnvOptions>(
+  async (fastify, options) => {
+    await fastify.register(env, {
+      ...options,
+      schema: envSchema,
+    });
+  },
+);

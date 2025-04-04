@@ -1,14 +1,7 @@
 import type { Role } from '@prisma/client';
 
-import { fastifyJwt as jwt } from '@fastify/jwt';
+import { type FastifyJWTOptions, fastifyJwt as jwt } from '@fastify/jwt';
 import { fastifyPlugin } from 'fastify-plugin';
-
-declare module '@fastify/jwt' {
-  interface FastifyJWT {
-    payload: JwtPayload;
-    user: JwtUser;
-  }
-}
 
 interface JwtPayload {
   role: Role;
@@ -20,13 +13,24 @@ interface JwtUser {
   userId: string;
 }
 
-const fastifyJwt = fastifyPlugin(async (fastify) => {
-  await fastify.register(jwt, {
-    secret: fastify.config.JWT_SECRET,
-    sign: {
-      expiresIn: '1d',
-    },
-  });
-});
+declare module '@fastify/jwt' {
+  interface FastifyJWT {
+    payload: JwtPayload;
+    user: JwtUser;
+  }
+}
 
-export default fastifyJwt;
+export interface FastifyJwtOptions extends Partial<FastifyJWTOptions> {}
+
+export const fastifyJwt = fastifyPlugin<FastifyJwtOptions>(
+  async (fastify, options) => {
+    await fastify.register(jwt, {
+      secret: fastify.config.JWT_SECRET,
+      ...options,
+      sign: {
+        expiresIn: '1d',
+        ...options.sign,
+      },
+    });
+  },
+);

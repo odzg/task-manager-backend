@@ -1,8 +1,13 @@
-import { fastifyHelmet as helmet } from '@fastify/helmet';
+import {
+  type FastifyHelmetOptions,
+  fastifyHelmet as helmet,
+} from '@fastify/helmet';
 import { fastifyPlugin } from 'fastify-plugin';
 
-const fastifyHelmet = fastifyPlugin(async (fastify) => {
-  await fastify.register(helmet);
-});
+export const fastifyHelmet = fastifyPlugin<FastifyHelmetOptions>(
+  async (fastify, options) => {
+    await fastify.register(helmet, options);
+  },
+);
 
-export default fastifyHelmet;
+export type { FastifyHelmetOptions } from '@fastify/helmet';
