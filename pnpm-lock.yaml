@@ -64,8 +64,8 @@ importers:
         specifier: 19.8.0
         version: 19.8.0
       '@dotenvx/dotenvx':
-        specifier: 1.39.0
-        version: 1.39.0
+        specifier: 1.39.1
+        version: 1.39.1
       '@eslint-community/eslint-plugin-eslint-comments':
         specifier: 4.4.1
         version: 4.4.1(eslint@9.23.0(jiti@2.4.2))
@@ -264,8 +264,8 @@ packages:
     resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
-  '@dotenvx/dotenvx@1.39.0':
-    resolution: {integrity: sha512-qGfDpL/3S17MQYXpR3HkBS5xNQ7wiFlqLdpr+iIQzv17aMRcSlgL4EjMIsYFZ540Dq17J+y5FVElA1AkVoXiUA==}
+  '@dotenvx/dotenvx@1.39.1':
+    resolution: {integrity: sha512-FIjEB/s3TSQBYnYA64GPkXJrOR6w5J52SSnl6gSoq1tp+4r9zLjaAsf65AgDv5emA4ypm90gVWv1XX0/bfHA/A==}
     hasBin: true
 
   '@ecies/ciphers@0.2.3':
@@ -3433,7 +3433,7 @@ snapshots:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
 
-  '@dotenvx/dotenvx@1.39.0':
+  '@dotenvx/dotenvx@1.39.1':
     dependencies:
       commander: 11.1.0
       dotenv: 16.4.7
