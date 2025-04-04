@@ -8,7 +8,10 @@
     ".dependency-cruiser.js",
 
     // Config file of `prisma`
-    "prisma.config.ts"
+    "prisma.config.ts",
+
+    // Script file ran by `prisma db seed`
+    "prisma/seed.ts"
   ],
   "ignoreDependencies": [
     // Ran by `lefthook`, and potentially also by developer/automation
