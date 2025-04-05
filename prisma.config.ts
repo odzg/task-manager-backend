@@ -1,9 +1,7 @@
-import { config } from '@dotenvx/dotenvx';
+import { loadEnvFile } from 'node:process';
+
 import { defineConfig } from 'prisma/config';
 
-config({
-  path: '.env.local',
-  quiet: true,
-});
+loadEnvFile('.env.local');
 
 export default defineConfig({ earlyAccess: true });
