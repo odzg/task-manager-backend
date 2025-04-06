@@ -2,6 +2,10 @@ import { loadEnvFile } from 'node:process';
 
 import { defineConfig } from 'prisma/config';
 
-loadEnvFile('.env.local');
+try {
+  loadEnvFile('.env.local');
+} catch {
+  /* ignore error */
+}
 
 export default defineConfig({ earlyAccess: true });
