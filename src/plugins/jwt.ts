@@ -1,7 +1,7 @@
-import type { Role } from '@prisma/client';
-
 import { type FastifyJWTOptions, fastifyJwt as jwt } from '@fastify/jwt';
 import { fastifyPlugin } from 'fastify-plugin';
+
+import type { Role } from '#generated/prisma/client.js';
 
 interface JwtPayload {
   role: Role;

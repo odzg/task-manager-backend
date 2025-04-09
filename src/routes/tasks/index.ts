@@ -1,10 +1,10 @@
 import type { FastifyPluginCallbackTypebox } from '@fastify/type-provider-typebox';
 import type { FastifySchema } from 'fastify';
 
-import { Role, Status } from '@prisma/client';
 import { Type } from '@sinclair/typebox';
 import { parseISO } from 'date-fns';
 
+import { Role, Status } from '#generated/prisma/client.js';
 import { prisma } from '#instances/prisma.ts';
 
 const Task = Type.Object({

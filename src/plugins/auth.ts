@@ -7,8 +7,9 @@ import {
   fastifyAuth as auth,
   type FastifyAuthPluginOptions,
 } from '@fastify/auth';
-import { Role } from '@prisma/client';
 import { fastifyPlugin } from 'fastify-plugin';
+
+import { Role } from '#generated/prisma/client.js';
 
 declare module 'fastify' {
   interface FastifyInstance {

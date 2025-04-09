@@ -1,5 +1,4 @@
-import { PrismaClient, Role } from '@prisma/client';
-
+import { PrismaClient, Role } from '#generated/prisma/client.js';
 import { hashPassword } from '#utils/password.ts';
 
 const prisma = new PrismaClient();

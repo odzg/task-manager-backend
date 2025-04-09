@@ -5,7 +5,8 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "checkJs": true,
-    "erasableSyntaxOnly": true,
+    /* On-hold until new Prisma client generator supports this flag: https://www.prisma.io/docs/orm/prisma-schema/overview/generators#limitations */
+    // "erasableSyntaxOnly": true,
     "exactOptionalPropertyTypes": true,
     "incremental": true,
     "lib": ["ESNext"],
@@ -23,5 +24,6 @@
     "target": "ESNext",
     "verbatimModuleSyntax": true
   },
+  "exclude": ["src/generated"],
   "include": ["**/*", ".dependency-cruiser.js"]
 }
