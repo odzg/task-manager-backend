@@ -17,6 +17,9 @@
     // Ran by `lefthook`, and potentially also by developer/automation
     "@commitlint/cli",
 
+    // Used implicitly by Prisma
+    "@prisma/client",
+
     // Used implicitly by `eslint-plugin-import-x`
     "eslint-import-resolver-typescript"
   ],

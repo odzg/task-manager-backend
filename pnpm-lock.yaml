@@ -35,7 +35,7 @@ importers:
       '@fastify/type-provider-typebox':
         specifier: 5.1.0
         version: 5.1.0(@sinclair/typebox@0.34.33)
-      '#generated/prisma/client.js':
+      '@prisma/client':
         specifier: 6.6.0
         version: 6.6.0(prisma@6.6.0(typescript@5.8.3))(typescript@5.8.3)
       '@sinclair/typebox':
