@@ -9,6 +9,7 @@
   },
   "scripts": {
     "commit": "commit",
+    "commitlint": "commitlint",
     "deploy": "",
     "dev": "node --watch --env-file=.env.development --env-file=.env.local --experimental-strip-types=true ./src/server.ts",
     "format": "prettier --write --cache . && prisma format",

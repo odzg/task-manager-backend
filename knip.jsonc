@@ -14,9 +14,6 @@
     "prisma/seed.ts"
   ],
   "ignoreDependencies": [
-    // Ran by `lefthook`, and potentially also by developer/automation
-    "@commitlint/cli",
-
     // Used implicitly by Prisma
     "@prisma/client",
 
