@@ -1,11 +1,10 @@
-import path from 'node:path';
-import { cwd } from 'node:process';
-
 import {
   fastifyAutoload as autoload,
   type AutoloadPluginOptions,
 } from '@fastify/autoload';
 import { fastifyPlugin } from 'fastify-plugin';
+import path from 'node:path';
+import { cwd } from 'node:process';
 
 export interface FastifyRouterOptions extends Partial<AutoloadPluginOptions> {}
 
