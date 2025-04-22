@@ -34,7 +34,6 @@ export default typegen(
     globalIgnores([
       /* Auto-generated files/directories */
       'pnpm-lock.yaml',
-      'prisma/migrations',
 
       /* Specific dot-files/dot-directories which should not be auto-ignored */
       '!.dependency-cruiser.js',
