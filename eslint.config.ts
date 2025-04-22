@@ -55,25 +55,19 @@ export default typegen(
       } satisfies ConfigArray[number]['languageOptions'],
       rules: {
         '@typescript-eslint/array-type': ['error', { default: 'generic' }],
-        '@typescript-eslint/consistent-generic-constructors': 'error',
-        '@typescript-eslint/consistent-indexed-object-style': 'error',
-        '@typescript-eslint/consistent-type-assertions': 'error',
         '@typescript-eslint/consistent-type-imports': [
           'error',
           { fixStyle: 'inline-type-imports' },
         ],
         '@typescript-eslint/no-empty-object-type': [
           'error',
-          {
-            allowInterfaces: 'with-single-extends',
-          },
+          { allowInterfaces: 'with-single-extends' },
         ],
         '@typescript-eslint/no-import-type-side-effects': 'error',
         '@typescript-eslint/no-unused-vars': [
           'error',
           { argsIgnorePattern: '^_' },
         ],
-        '@typescript-eslint/prefer-nullish-coalescing': 'off', // Too restrictive
       },
     },
     {
@@ -115,7 +109,6 @@ export default typegen(
         'import-x/newline-after-import': 'error',
         'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
         'import-x/no-named-as-default-member': 'off', // TypeScript already enforces this
-        'import-x/no-unresolved': ['error', { commonjs: true }],
         'jsonc/sort-keys': 'error',
         'n/no-missing-import': 'off', // This is already enforced either by TypeScript or by `import-x/no-unresolved`
         'no-console': ['error', { allow: ['error'] }],
@@ -136,12 +129,6 @@ export default typegen(
             ignore: [/^env$/],
           },
         ],
-      },
-    },
-    {
-      files: ['**/*.cjs'],
-      rules: {
-        '@typescript-eslint/no-require-imports': 'off', // CommonJS files must use "require" to import modules
       },
     },
     {
