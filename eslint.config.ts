@@ -111,7 +111,6 @@ export default typegen(
         'import-x/no-named-as-default-member': 'off', // TypeScript already enforces this
         'jsonc/sort-keys': 'error',
         'n/no-missing-import': 'off', // This is already enforced either by TypeScript or by `import-x/no-unresolved`
-        'no-console': ['error', { allow: ['error'] }],
         'perfectionist/sort-imports': ['error', { internalPattern: ['^#'] }],
         'security/detect-object-injection': 'off', // Too restrictive
         'unicorn/no-null': 'off', // Too restrictive
