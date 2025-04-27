@@ -151,8 +151,8 @@ importers:
         specifier: 6.6.0
         version: 6.6.0(typescript@5.8.3)
       syncpack:
-        specifier: 13.0.3
-        version: 13.0.3(typescript@5.8.3)
+        specifier: 13.0.4
+        version: 13.0.4(typescript@5.8.3)
       type-fest:
         specifier: 4.40.1
         version: 4.40.1
@@ -257,12 +257,6 @@ packages:
   '@commitlint/types@19.8.0':
     resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
-
-  '@effect/schema@0.75.5':
-    resolution: {integrity: sha512-TQInulTVCuF+9EIbJpyLP6dvxbQJMphrnRqgexm/Ze39rSjfhJuufF7XvU3SxTgg3HnL7B/kpORTJbHhlE6thw==}
-    deprecated: this package has been merged into the main effect package
-    peerDependencies:
-      effect: ^3.9.2
 
   '@emnapi/core@1.4.0':
     resolution: {integrity: sha512-H+N/FqT07NmLmt6OFFtDfwe8PNygprzBikrEMyQfgqSmT0vzE515Pz7R8izwB9q/zsH/MA64AKoul3sA6/CzVg==}
@@ -3003,8 +2997,8 @@ packages:
     resolution: {integrity: sha512-fWZqNBZNNFp/7mTUy1fSsydhKsAKJ+u90Nk7kOK5Gcq9vObaqLBLjWFDBkyVU9Vvc6Y71VbOevMuGhqv02bT+Q==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  syncpack@13.0.3:
-    resolution: {integrity: sha512-ZKrdDVmOUBWeaTVaxRnfwtqBJ5rMzMo7Lfdp04wtORwHEcvrq6M+NzCwS4PPIhTucD005wD8wumy90Ucz3lwXg==}
+  syncpack@13.0.4:
+    resolution: {integrity: sha512-kJ9VlRxNCsBD5pJAE29oXeBYbPLhEySQmK4HdpsLv81I6fcDDW17xeJqMwiU3H7/woAVsbgq25DJNS8BeiN5+w==}
     engines: {node: '>=18.18.0'}
     hasBin: true
 
@@ -3412,11 +3406,6 @@ snapshots:
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
-
-  '@effect/schema@0.75.5(effect@3.14.4)':
-    dependencies:
-      effect: 3.14.4
-      fast-check: 3.23.2
 
   '@emnapi/core@1.4.0':
     dependencies:
@@ -6489,9 +6478,8 @@ snapshots:
       '@pkgr/core': 0.2.0
       tslib: 2.8.1
 
-  syncpack@13.0.3(typescript@5.8.3):
+  syncpack@13.0.4(typescript@5.8.3):
     dependencies:
-      '@effect/schema': 0.75.5(effect@3.14.4)
       chalk: 5.4.1
       chalk-template: 1.1.0
       commander: 13.1.0
