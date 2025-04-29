@@ -1,5 +1,5 @@
 {
-  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
   "entry": [
     // Route files detected by `@fastify/autoload`
     "src/routes/**/*.ts",
@@ -11,16 +11,16 @@
     "prisma.config.ts",
 
     // Script file ran by `prisma db seed`
-    "prisma/seed.ts"
+    "prisma/seed.ts",
   ],
   "ignoreDependencies": [
     // Used implicitly by Prisma
     "@prisma/client",
 
     // Used implicitly by `eslint-plugin-import-x`
-    "eslint-import-resolver-typescript"
+    "eslint-import-resolver-typescript",
   ],
   "node": {
-    "entry": "**/*.test.ts"
-  }
+    "entry": "**/*.test.ts",
+  },
 }
