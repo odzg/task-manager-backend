@@ -23,4 +23,5 @@
   "node": {
     "entry": "**/*.test.ts",
   },
+  "treatConfigHintsAsErrors": true,
 }
