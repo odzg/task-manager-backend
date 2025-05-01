@@ -16,7 +16,7 @@
     "format": "prettier --write --cache . && prisma format",
     "format:check": "prettier --check --cache . && prisma format --check",
     "lefthook": "lefthook",
-    "lint": "pnpm --node-options=--experimental-strip-types eslint --max-warnings=0 --flag=unstable_native_nodejs_ts_config .",
+    "lint": "pnpm --node-options=--experimental-strip-types=true eslint --max-warnings=0 --flag=unstable_native_nodejs_ts_config .",
     "start": "node --experimental-strip-types=true ./src/server.ts",
     "test": "node --test --experimental-strip-types=true",
     "typecheck": "tsc"
