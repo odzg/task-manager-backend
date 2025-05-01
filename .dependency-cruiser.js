@@ -183,7 +183,7 @@ export default {
     /* Which modules not to follow further when encountered */
     doNotFollow: {
       /* path: an array of regular expressions in strings to match against */
-      path: 'node_modules',
+      path: ['node_modules', 'src/generated'],
     },
 
     /* options to pass on to enhanced-resolve, the package dependency-cruiser
