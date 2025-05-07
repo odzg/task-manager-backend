@@ -6,12 +6,6 @@
 
     // Config file of `dependency-cruiser`
     ".dependency-cruiser.js",
-
-    // Config file of `prisma`
-    "prisma.config.ts",
-
-    // Script file ran by `prisma db seed`
-    "prisma/seed.ts",
   ],
   "ignoreDependencies": [
     // Used implicitly by Prisma
