@@ -3,9 +3,6 @@
   "entry": [
     // Route files detected by `@fastify/autoload`
     "src/routes/**/*.ts",
-
-    // Config file of `dependency-cruiser`
-    ".dependency-cruiser.js",
   ],
   "ignoreDependencies": [
     // Used implicitly by Prisma
