@@ -114,7 +114,7 @@ export default typegen(
             'jsonc/sort-keys': 'error',
           },
         },
-      ] as const,
+      ],
       name: `${PROJECT_NAME}/json`,
     },
     {
