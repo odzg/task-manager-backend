@@ -7,9 +7,6 @@
   "ignoreDependencies": [
     // Used implicitly by Prisma
     "@prisma/client",
-
-    // Used implicitly by `eslint-plugin-import-x`
-    "eslint-import-resolver-typescript",
   ],
   "node": {
     "entry": "**/*.test.ts",
