@@ -1,4 +1,4 @@
-import type { FastifyPluginCallbackTypebox } from '@fastify/type-provider-typebox';
+import type { FastifyPluginAsyncTypebox } from '@fastify/type-provider-typebox';
 import type { FastifySchema } from 'fastify';
 
 import { Type } from '@sinclair/typebox';
@@ -67,7 +67,7 @@ const DeleteTaskSchema = {
   },
 } satisfies FastifySchema;
 
-const tasksRoutes: FastifyPluginCallbackTypebox = (fastify, _options, done) => {
+const tasksRoutes: FastifyPluginAsyncTypebox = (fastify) => {
   fastify.addHook('preHandler', fastify.auth([fastify.verifyJwt]));
 
   fastify.route({
@@ -244,7 +244,7 @@ const tasksRoutes: FastifyPluginCallbackTypebox = (fastify, _options, done) => {
     url: '/:id',
   });
 
-  done();
+  return Promise.resolve();
 };
 
 export default tasksRoutes;

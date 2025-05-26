@@ -1,4 +1,4 @@
-import type { FastifyPluginCallbackTypebox } from '@fastify/type-provider-typebox';
+import type { FastifyPluginAsyncTypebox } from '@fastify/type-provider-typebox';
 import type { FastifySchema } from 'fastify';
 
 import { Type } from '@sinclair/typebox';
@@ -21,7 +21,7 @@ const LoginSchema = {
   },
 } satisfies FastifySchema;
 
-const loginRoutes: FastifyPluginCallbackTypebox = (fastify, _options, done) => {
+const loginRoutes: FastifyPluginAsyncTypebox = (fastify) => {
   fastify.post('/', { schema: LoginSchema }, async (request, reply) => {
     const { password, username } = request.body;
 
@@ -46,7 +46,7 @@ const loginRoutes: FastifyPluginCallbackTypebox = (fastify, _options, done) => {
     };
   });
 
-  done();
+  return Promise.resolve();
 };
 
 export default loginRoutes;
