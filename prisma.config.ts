@@ -4,7 +4,7 @@ import { defineConfig } from 'prisma/config';
 try {
   loadEnvFile('.env.local');
 } catch {
-  /* ignore error */
+  // If any error occurs while loading the environment file, simply ignore it.
 }
 
 export default defineConfig({ earlyAccess: true });
