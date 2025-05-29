@@ -10,13 +10,15 @@
   },
   "scripts": {
     "commit": "commit",
-    "commitlint": "commitlint",
     "deploy": "",
     "dev": "node --watch --env-file=.env.development --env-file=.env.local --experimental-strip-types=true ./src/server.ts",
     "format": "prettier --write --cache . && prisma format",
     "format:check": "prettier --check --cache . && prisma format --check",
     "lefthook": "lefthook",
     "lint": "pnpm --node-options=--experimental-strip-types=true eslint --max-warnings=0 --flag=unstable_native_nodejs_ts_config .",
+    "lint:commit": "commitlint --from=HEAD~1 --to=HEAD --verbose",
+    "lint:depcruise": "depcruise .",
+    "lint:syncpack": "syncpack lint",
     "start": "node --experimental-strip-types=true ./src/server.ts",
     "test": "node --test --experimental-strip-types=true",
     "typecheck": "tsc"
