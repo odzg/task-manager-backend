@@ -12,8 +12,8 @@ importers:
         specifier: 5.0.2
         version: 5.0.2
       '@fastify/autoload':
-        specifier: 6.3.0
-        version: 6.3.0
+        specifier: 6.3.1
+        version: 6.3.1
       '@fastify/cors':
         specifier: 11.0.1
         version: 11.0.1
@@ -580,8 +580,8 @@ packages:
   '@fastify/auth@5.0.2':
     resolution: {integrity: sha512-EdVw2yBV/rD7b9S2NxP7Mm0MOiC3NnbR9InO/p8ksp1jzcb4OqTmJBFarIQsEHsUJ71BxOnYLdaYNlm3pi2e2Q==}
 
-  '@fastify/autoload@6.3.0':
-    resolution: {integrity: sha512-VBYApgvqX5e+M2BAWKCxrYk9yTo8z127xsSzsSePQZlxt97tbQay74n//NDFK4ovFMgyhKSjoWtHTbdGw/RDvQ==}
+  '@fastify/autoload@6.3.1':
+    resolution: {integrity: sha512-0fsG+lO3m5yEZVjXKpltCe+2eHhM6rfAPQhvlGUgLUFTw/N2wA9WqPTObMtrF3oUCUrxbSDv60HlUIoh+aFM1A==}
 
   '@fastify/cors@11.0.1':
     resolution: {integrity: sha512-dmZaE7M1f4SM8ZZuk5RhSsDJ+ezTgI7v3HHRj8Ow9CneczsPLZV6+2j2uwdaSLn8zhTv6QV0F4ZRcqdalGx1pQ==}
@@ -3935,7 +3935,7 @@ snapshots:
       fastify-plugin: 5.0.1
       reusify: 1.1.0
 
-  '@fastify/autoload@6.3.0': {}
+  '@fastify/autoload@6.3.1': {}
 
   '@fastify/cors@11.0.1':
     dependencies:
