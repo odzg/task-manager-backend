@@ -5,6 +5,7 @@ demorgan
 depcruise
 esbenp
 jsons
+knip
 lefthook
 njsproj
 ntvs
