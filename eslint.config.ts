@@ -188,15 +188,7 @@ export default typegen(
         'unicorn/prevent-abbreviations': [
           'error',
           {
-            allowList: {
-              envOptions: true,
-              EnvOptions: true,
-              envSchema: true,
-              EnvSchema: true,
-              fastifyEnv: true,
-              FastifyEnvOptions: true,
-            },
-            ignore: [/^env$/],
+            ignore: [/env/i],
           },
         ],
       },
