@@ -5,7 +5,7 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "checkJs": true,
-    /* On-hold until supported by new Prisma client generator: https://www.prisma.io/docs/orm/prisma-schema/overview/generators#limitations */
+    // On-hold until supported by new Prisma client generator: https://www.prisma.io/docs/orm/prisma-schema/overview/generators#limitations
     // "erasableSyntaxOnly": true,
     "exactOptionalPropertyTypes": true,
     "incremental": true,
