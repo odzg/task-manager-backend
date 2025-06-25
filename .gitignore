@@ -1,6 +1,6 @@
 # Auto-generated
 *.tsbuildinfo
-**/generated/prisma
+generated/prisma
 eslint-typegen.d.ts
 
 # IDEs

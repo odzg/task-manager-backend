@@ -6,6 +6,7 @@
   "description": "",
   "type": "module",
   "imports": {
+    "#generated/*": "./generated/*",
     "#*": "./src/*"
   },
   "scripts": {

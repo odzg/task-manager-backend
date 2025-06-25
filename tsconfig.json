@@ -24,6 +24,6 @@
     "types": ["node"],
     "verbatimModuleSyntax": true
   },
-  "exclude": ["**/generated/prisma"],
+  "exclude": ["generated/prisma"],
   "include": ["**/*", ".dependency-cruiser.js"]
 }
