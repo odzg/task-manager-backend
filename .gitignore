@@ -1,6 +1,5 @@
 # Auto-generated
 *.tsbuildinfo
-generated/prisma
 eslint-typegen.d.ts
 
 # IDEs
@@ -31,3 +30,6 @@ node_modules
 yarn.lock
 .pnp
 .pnp.js
+
+# Prisma Client
+generated/prisma

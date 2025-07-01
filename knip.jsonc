@@ -4,7 +4,7 @@
     // Route files detected by `@fastify/autoload`
     "src/routes/**/*.ts",
   "ignoreDependencies": [
-    // Used implicitly by Prisma
+    // Referenced in auto-generated Prisma client files, which are gitignored.
     "@prisma/client",
   ],
   "node": {
