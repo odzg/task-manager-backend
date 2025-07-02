@@ -11,7 +11,6 @@
   },
   "scripts": {
     "check-spelling": "cspell --no-progress --show-context .",
-    "deploy": "",
     "dev": "node --watch --env-file=.env.development --env-file=.env.local --experimental-strip-types ./src/server.ts",
     "format": "prettier --write --cache . && prisma format",
     "format:check": "prettier --check --cache . && prisma format --check",
