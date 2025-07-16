@@ -34,13 +34,13 @@ importers:
         version: 5.2.3
       '@fastify/type-provider-typebox':
         specifier: 5.2.0
-        version: 5.2.0(@sinclair/typebox@0.34.37)
+        version: 5.2.0(@sinclair/typebox@0.34.38)
       '@prisma/client':
         specifier: 6.12.0
         version: 6.12.0(prisma@6.12.0(typescript@5.8.3))(typescript@5.8.3)
       '@sinclair/typebox':
-        specifier: 0.34.37
-        version: 0.34.37
+        specifier: 0.34.38
+        version: 0.34.38
       date-fns:
         specifier: 4.1.0
         version: 4.1.0
@@ -776,8 +776,8 @@ packages:
   '@prisma/get-platform@6.12.0':
     resolution: {integrity: sha512-nRerTGhTlgyvcBlyWgt8OLNIV7QgJS2XYXMJD1hysorMCuLAjuDDuoxmVt7C2nLxbuxbWPp7OuFRHC23HqD9dA==}
 
-  '@sinclair/typebox@0.34.37':
-    resolution: {integrity: sha512-2TRuQVgQYfy+EzHRTIvkhv2ADEouJ2xNS/Vq+W5EuuewBdOrvATvljZTxHWZSTYr2sTjTHpGvucaGAt67S2akw==}
+  '@sinclair/typebox@0.34.38':
+    resolution: {integrity: sha512-HpkxMmc2XmZKhvaKIZZThlHmx1L0I/V1hWK1NubtlFnr6ZqdiOpV72TKudZUNQjZNsyDBay72qFEhEvb+bcwcA==}
 
   '@sindresorhus/merge-streams@2.3.0':
     resolution: {integrity: sha512-LtoMMhxAlorcGhmFYI+LhPgbPZCkgP6ra1YL604EeF6U98pLlQ3iWIGMdWSC+vWmPBWBNgmDBAhnAobLROJmwg==}
@@ -4192,9 +4192,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@fastify/type-provider-typebox@5.2.0(@sinclair/typebox@0.34.37)':
+  '@fastify/type-provider-typebox@5.2.0(@sinclair/typebox@0.34.38)':
     dependencies:
-      '@sinclair/typebox': 0.34.37
+      '@sinclair/typebox': 0.34.38
 
   '@humanfs/core@0.19.1': {}
 
@@ -4316,7 +4316,7 @@ snapshots:
     dependencies:
       '@prisma/debug': 6.12.0
 
-  '@sinclair/typebox@0.34.37': {}
+  '@sinclair/typebox@0.34.38': {}
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
