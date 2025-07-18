@@ -7,10 +7,5 @@
     // Referenced in auto-generated Prisma client files, which are gitignored.
     "@prisma/client",
   ],
-  "node": {
-    "entry":
-      // Test files detected by Node test runner
-      "**/*.test.ts",
-  },
   "treatConfigHintsAsErrors": true,
 }
