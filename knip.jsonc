@@ -7,5 +7,8 @@
     // Referenced in auto-generated Prisma client files, which are gitignored.
     "@prisma/client",
   ],
+  "prisma": {
+    "entry": "prisma/seed.ts",
+  },
   "treatConfigHintsAsErrors": true,
 }

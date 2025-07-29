@@ -7,4 +7,8 @@ try {
   // If any error occurs while loading the environment file, simply ignore it.
 }
 
-export default defineConfig({ earlyAccess: true });
+export default defineConfig({
+  migrations: {
+    seed: 'node --experimental-strip-types ./prisma/seed.ts',
+  },
+});
