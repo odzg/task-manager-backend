@@ -9,6 +9,6 @@ try {
 
 export default defineConfig({
   migrations: {
-    seed: 'node --experimental-strip-types ./prisma/seed.ts',
+    seed: 'node ./prisma/seed.ts',
   },
 });
