@@ -3,7 +3,7 @@
   "name": "task-manager-backend",
   "version": "0.0.0",
   "private": true,
-  "description": "",
+  "description": "Backend for the task manager application",
   "type": "module",
   "imports": {
     "#generated/*": "./generated/*",
