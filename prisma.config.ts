@@ -3,8 +3,13 @@ import { defineConfig } from 'prisma/config';
 
 try {
   loadEnvFile('.env.local');
-} catch {
-  // If any error occurs while loading the environment file, simply ignore it.
+} catch (error) {
+  const isFileNotFoundError =
+    error instanceof Error && 'code' in error && error.code === 'ENOENT';
+
+  if (!isFileNotFoundError) {
+    throw error;
+  }
 }
 
 export default defineConfig({
