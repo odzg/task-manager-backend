@@ -1,11 +1,10 @@
 {
   "$schema": "https://unpkg.com/knip@latest/schema-jsonc.json",
-  "entry":
-    // Route files detected by `@fastify/autoload`
-    "src/routes/**/*.ts",
+  "entry": [
+    "src/routes/**/*.ts", // Route files detected by `@fastify/autoload`
+  ],
   "ignoreDependencies": [
-    // Referenced in auto-generated Prisma client files, which are gitignored.
-    "@prisma/client",
+    "@prisma/client", // Referenced in auto-generated Prisma client files, which are gitignored.
   ],
   "prisma": {
     "entry": "prisma/seed.ts",
