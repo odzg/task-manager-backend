@@ -6,9 +6,10 @@ import { fastifyPlugin } from 'fastify-plugin';
 import path from 'node:path';
 import { cwd } from 'node:process';
 
-export interface FastifyRouterOptions extends Partial<AutoloadPluginOptions> {}
+export interface FastifyFileRouterOptions
+  extends Partial<AutoloadPluginOptions> {}
 
-export const fastifyRouter = fastifyPlugin<FastifyRouterOptions>(
+export const fastifyFileRouter = fastifyPlugin<FastifyFileRouterOptions>(
   async (fastify, options) => {
     await fastify.register(autoload, {
       dir: path.join(cwd(), 'src', 'routes'),
