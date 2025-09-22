@@ -4,8 +4,8 @@ import {
   fastifyEnv as env,
   type FastifyEnvOptions as EnvOptions,
 } from '@fastify/env';
-import { type Static, Type } from '@sinclair/typebox';
 import { fastifyPlugin } from 'fastify-plugin';
+import { type Static, Type } from 'typebox';
 
 declare module 'fastify' {
   interface FastifyInstance {

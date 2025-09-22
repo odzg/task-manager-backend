@@ -1,7 +1,7 @@
 import type { FastifyPluginAsyncTypebox } from '@fastify/type-provider-typebox';
 import type { FastifySchema } from 'fastify';
 
-import { Type } from '@sinclair/typebox';
+import { Type } from 'typebox';
 
 import { prisma } from '#instances/prisma.ts';
 import { verifyPassword } from '#utils/password.ts';

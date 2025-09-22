@@ -1,8 +1,8 @@
 import type { FastifyPluginAsyncTypebox } from '@fastify/type-provider-typebox';
 import type { FastifySchema } from 'fastify';
 
-import { Type } from '@sinclair/typebox';
 import { parseISO } from 'date-fns';
+import { Type } from 'typebox';
 
 import { Role, Status } from '#generated/prisma/client.js';
 import { prisma } from '#instances/prisma.ts';
@@ -31,10 +31,13 @@ const GetTasksSchema = {
 } satisfies FastifySchema;
 
 const CreateTaskSchema = {
-  body: Type.Composite([
-    Type.Pick(Task, ['reminderDate', 'title', 'userId']),
-    Type.Partial(Type.Pick(Task, ['description'])),
-  ]),
+  body: Type.Interface(
+    [
+      Type.Pick(Task, ['reminderDate', 'title', 'userId']),
+      Type.Partial(Type.Pick(Task, ['description'])),
+    ],
+    {},
+  ),
   response: {
     200: Task,
   },
