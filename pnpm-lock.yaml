@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fastify/auth':
-        specifier: 5.0.2
-        version: 5.0.2
+        specifier: 5.0.3
+        version: 5.0.3
       '@fastify/autoload':
         specifier: 6.3.1
         version: 6.3.1
@@ -577,8 +577,8 @@ packages:
   '@fastify/ajv-compiler@4.0.2':
     resolution: {integrity: sha512-Rkiu/8wIjpsf46Rr+Fitd3HRP+VsxUFDDeag0hs9L0ksfnwx2g7SPQQTFL0E8Qv+rfXzQOxBJnjUB9ITUDjfWQ==}
 
-  '@fastify/auth@5.0.2':
-    resolution: {integrity: sha512-EdVw2yBV/rD7b9S2NxP7Mm0MOiC3NnbR9InO/p8ksp1jzcb4OqTmJBFarIQsEHsUJ71BxOnYLdaYNlm3pi2e2Q==}
+  '@fastify/auth@5.0.3':
+    resolution: {integrity: sha512-vuaSrwco+oyTC5UiIyW+zp9BEwkXardGQtAB//ZJBk2cxEHvCXD5dVZzf83UbQchQJQR+SQbt3MYQrIACFkEQg==}
 
   '@fastify/autoload@6.3.1':
     resolution: {integrity: sha512-0fsG+lO3m5yEZVjXKpltCe+2eHhM6rfAPQhvlGUgLUFTw/N2wA9WqPTObMtrF3oUCUrxbSDv60HlUIoh+aFM1A==}
@@ -3900,7 +3900,7 @@ snapshots:
       ajv-formats: 3.0.1(ajv@8.17.1)
       fast-uri: 3.0.6
 
-  '@fastify/auth@5.0.2':
+  '@fastify/auth@5.0.3':
     dependencies:
       fastify-plugin: 5.0.1
       reusify: 1.1.0
