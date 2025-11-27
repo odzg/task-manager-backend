@@ -16,4 +16,5 @@ export default defineConfig({
   migrations: {
     seed: 'node ./prisma/seed.ts',
   },
+  schema: './prisma/schema.prisma',
 });
