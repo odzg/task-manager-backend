@@ -6,8 +6,7 @@ import { fastifyPlugin } from 'fastify-plugin';
 import path from 'node:path';
 import { cwd } from 'node:process';
 
-export interface FastifyFileRouterOptions
-  extends Partial<AutoloadPluginOptions> {}
+export interface FastifyFileRouterOptions extends Partial<AutoloadPluginOptions> {}
 
 export const fastifyFileRouter = fastifyPlugin<FastifyFileRouterOptions>(
   async (fastify, options) => {
