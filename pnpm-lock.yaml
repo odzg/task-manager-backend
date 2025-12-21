@@ -34,7 +34,7 @@ importers:
         version: 5.2.3
       '@fastify/type-provider-typebox':
         specifier: 6.1.0
-        version: 6.1.0(typebox@1.0.62)
+        version: 6.1.0(typebox@1.0.64)
       '@prisma/client':
         specifier: 6.19.1
         version: 6.19.1(prisma@6.19.1(typescript@5.9.3))(typescript@5.9.3)
@@ -48,8 +48,8 @@ importers:
         specifier: 5.1.0
         version: 5.1.0
       typebox:
-        specifier: 1.0.62
-        version: 1.0.62
+        specifier: 1.0.64
+        version: 1.0.64
     devDependencies:
       '@commitlint/cli':
         specifier: 20.2.0
@@ -3289,8 +3289,8 @@ packages:
     resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
     engines: {node: '>=20'}
 
-  typebox@1.0.62:
-    resolution: {integrity: sha512-iWxUfvzC5tGZWFrhoPLUKQJgFif4aDVgyaBbCURFIswex8to1JsnwDtenM2GqNI1VC/vqNlHtGc0ZR5eh0vbww==}
+  typebox@1.0.64:
+    resolution: {integrity: sha512-U6quDhQMzQRzBX8jvlE5mZlUnlMRTaZrG/QMAhOYVJ0D0rhq1iOXBQVSzBX0JgAh55jXQ7fWIv24i+lVimXcDw==}
 
   typescript-eslint@8.49.0:
     resolution: {integrity: sha512-zRSVH1WXD0uXczCXw+nsdjGPUdx4dfrs5VQoHnUWmv1U3oNlAKv4FUNdLDhVUg+gYn+a5hUESqch//Rv5wVhrg==}
@@ -4053,9 +4053,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@fastify/type-provider-typebox@6.1.0(typebox@1.0.62)':
+  '@fastify/type-provider-typebox@6.1.0(typebox@1.0.64)':
     dependencies:
-      typebox: 1.0.62
+      typebox: 1.0.64
 
   '@humanfs/core@0.19.1': {}
 
@@ -6873,7 +6873,7 @@ snapshots:
     dependencies:
       tagged-tag: 1.0.0
 
-  typebox@1.0.62: {}
+  typebox@1.0.64: {}
 
   typescript-eslint@8.49.0(eslint@9.39.2(jiti@2.6.0))(typescript@5.9.3):
     dependencies:
